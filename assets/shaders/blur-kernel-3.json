@@ -1,0 +1,27 @@
+{
+  "vertex": "shaders/blur-kernel-3.vert",
+  "fragment": "shaders/blur-kernel-3.frag",
+  "layout": {
+    "aPosition": {
+      "size": 2,
+      "stride": 4,
+      "offset": 0
+    },
+    "aTexCoord": {
+      "size": 2,
+      "stride": 4,
+      "offset": 2
+    }
+  },
+  "uniforms": {
+    "uInvSize": "inverse-viewport-size",
+    "uScale": [0, 0]
+  },
+  "samplers": {
+    "sBackBuffer": {
+      "channel": 0,
+      "texture": "",
+      "filtering": "linear"
+    }
+  }
+}

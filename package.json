@@ -1,0 +1,22 @@
+{
+  "name": "oxygen-postprocess-bloom-blur-shader-assets",
+  "version": "1.0.0",
+  "description": "Oxygen Game Engine Postprocess Bloom Blur Shader Assets",
+  "main": "index.js",
+  "author": "Patryk 'PsichiX' Budzynski <psichix@gmail.com> (http://psichix.io)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PsichiX/oxygen-postprocess-bloom-blur-shader-assets.git"
+  },
+  "keywords": [
+    "oxygen"
+  ],
+  "bugs": {
+    "url": "https://github.com/PsichiX/oxygen-postprocess-bloom-blur-shader-assets/issues"
+  },
+  "homepage": "https://github.com/PsichiX/oxygen-postprocess-bloom-blur-shader-assets#readme",
+  "devDependencies": {
+    "oxygen-core": "^1.4.3"
+  }
+}

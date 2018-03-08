@@ -1,0 +1,10 @@
+{
+  "assets": [
+    "shader://shaders/bloom.json",
+    "shader://shaders/blur.json",
+    "shader://shaders/blur-kernel-3.json",
+    "shader://shaders/blur-kernel-5.json",
+    "shader://shaders/blur-kernel-7.json",
+    "shader://shaders/blur-kernel-9.json"
+  ]
+}
