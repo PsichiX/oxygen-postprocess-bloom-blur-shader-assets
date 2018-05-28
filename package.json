@@ -1,8 +1,8 @@
 {
   "name": "oxygen-postprocess-bloom-blur-shader-assets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Oxygen Game Engine Postprocess Bloom Blur Shader Assets",
-  "main": "index.js",
+  "main": "src/index.js",
   "author": "Patryk 'PsichiX' Budzynski <psichix@gmail.com> (http://psichix.io)",
   "license": "MIT",
   "repository": {
@@ -16,7 +16,24 @@
     "url": "https://github.com/PsichiX/oxygen-postprocess-bloom-blur-shader-assets/issues"
   },
   "homepage": "https://github.com/PsichiX/oxygen-postprocess-bloom-blur-shader-assets#readme",
+  "scripts": {
+    "clean": "rm -rf bin",
+    "build": "./node_modules/.bin/webpack -p",
+    "rebuild": "npm run clean && npm run build"
+  },
+  "files": [
+    "src",
+    "assets",
+    ".babelrc",
+    ".webpack.config.js",
+    "bin/oxygen-postprocess-bloom-blur-shader-assets.js"
+  ],
   "devDependencies": {
-    "oxygen-core": "^1.4.3"
+    "@babel/core": "^7.0.0-beta.49",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.49",
+    "@babel/preset-env": "^7.0.0-beta.49",
+    "babel-loader": "^8.0.0-beta.3",
+    "webpack": "^4.9.1",
+    "webpack-cli": "^2.1.4"
   }
 }
