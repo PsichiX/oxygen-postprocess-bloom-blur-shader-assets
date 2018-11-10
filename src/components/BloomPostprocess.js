@@ -1,4 +1,4 @@
-import { PostprocessBase, PostprocessPass } from 'oxygen-core';
+import { PostprocessPass, PostprocessRackPass } from 'oxygen-core';
 
 let uidGenerator = 0;
 
@@ -286,7 +286,7 @@ export class BloomPostprocessPass extends PostprocessPass {
 
 }
 
-export default class BloomPostprocess extends PostprocessBase {
+export default class BloomPostprocess extends PostprocessRackPass {
 
   static get propsTypes() {
     return {
@@ -374,11 +374,11 @@ export default class BloomPostprocess extends PostprocessBase {
   }
 
   onRegister() {
-    this.registerPostprocessPass(this._pass);
+    this.registerPass(this._pass);
   }
 
   onUnregister() {
-    this.unregisterPostprocessPass(this._pass);
+    this.unregisterPass(this._pass);
   }
 
 }
