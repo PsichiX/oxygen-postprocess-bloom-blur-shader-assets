@@ -1,0 +1,48 @@
+{
+  "targets": {
+    "t0": { "level": 1 },
+    "t1": { "level": 2 },
+    "t2": { "level": 3 },
+    "t3": { "level": 3 }
+  },
+  "connections": [
+    [null, "pass-through", null],
+    [null, "pass0", "t0"],
+    ["t0", "pass1", "t1"],
+    ["t1", "pass2", "t2"],
+    ["t2", "pass3", "t3"],
+    ["t3", "pass-bloom", null]
+  ],
+  "effects": {
+    "pass-through": {
+      "shader": "shaders/pass-through.json"
+    },
+    "pass-bloom": {
+      "shader": "shaders/pass-bloom.json"
+    },
+    "pass0": {
+      "shader": "shaders/blur-kernel-5.json",
+      "overrideUniforms": {
+        "uScale": [1, 0]
+      }
+    },
+    "pass1": {
+      "shader": "shaders/blur-kernel-5.json",
+      "overrideUniforms": {
+        "uScale": [0, 1]
+      }
+    },
+    "pass2": {
+      "shader": "shaders/blur-kernel-5.json",
+      "overrideUniforms": {
+        "uScale": [1, 0]
+      }
+    },
+    "pass3": {
+      "shader": "shaders/blur-kernel-5.json",
+      "overrideUniforms": {
+        "uScale": [0, 1]
+      }
+    }
+  }
+}

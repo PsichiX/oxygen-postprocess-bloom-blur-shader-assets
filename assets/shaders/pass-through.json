@@ -1,0 +1,23 @@
+{
+  "vertex": "shaders/pass-through.vert",
+  "fragment": "shaders/pass-through.frag",
+  "layout": {
+    "aPosition": {
+      "size": 2,
+      "stride": 4,
+      "offset": 0
+    },
+    "aTexCoord": {
+      "size": 2,
+      "stride": 4,
+      "offset": 2
+    }
+  },
+  "samplers": {
+    "sBackBuffer": {
+      "channel": 0,
+      "texture": "",
+      "filtering": "linear"
+    }
+  }
+}

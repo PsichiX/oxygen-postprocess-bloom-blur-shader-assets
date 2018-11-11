@@ -1,10 +1,21 @@
 {
   "assets": [
-    "shader://shaders/bloom.json",
-    "shader://shaders/blur.json",
+    "shader://shaders/pass-through.json",
+    "shader://shaders/pass-bloom.json",
     "shader://shaders/blur-kernel-3.json",
     "shader://shaders/blur-kernel-5.json",
     "shader://shaders/blur-kernel-7.json",
-    "shader://shaders/blur-kernel-9.json"
+    "shader://shaders/blur-kernel-9.json",
+    "postprocess://postprocess/blur-3.json",
+    "postprocess://postprocess/blur-5.json",
+    "postprocess://postprocess/blur-7.json",
+    "postprocess://postprocess/blur-9.json",
+    "postprocess://postprocess/bloom-3.json",
+    "postprocess://postprocess/bloom-5.json",
+    "postprocess://postprocess/bloom-7.json",
+    "postprocess://postprocess/bloom-3.json",
+    "postprocess://postprocess/bloom-5.json",
+    "postprocess://postprocess/bloom-7.json",
+    "postprocess://postprocess/bloom-9.json"
   ]
 }

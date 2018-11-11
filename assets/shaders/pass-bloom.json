@@ -1,0 +1,30 @@
+{
+  "vertex": "shaders/pass-bloom.vert",
+  "fragment": "shaders/pass-bloom.frag",
+  "layout": {
+    "aPosition": {
+      "size": 2,
+      "stride": 4,
+      "offset": 0
+    },
+    "aTexCoord": {
+      "size": 2,
+      "stride": 4,
+      "offset": 2
+    }
+  },
+  "samplers": {
+    "sBackBuffer": {
+      "channel": 0,
+      "texture": "",
+      "filtering": "linear"
+    }
+  },
+  "uniforms": {
+    "uIntensity": 1
+  },
+  "blending": {
+    "source": "one",
+    "destination": "one"
+  }
+}

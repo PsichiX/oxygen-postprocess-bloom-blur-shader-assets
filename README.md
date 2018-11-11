@@ -16,12 +16,3 @@ new PackWebpackPlugin([
   ] }
 ])
 ```
-
-**src/index.js**:
-```javascript
-// Import helper component.
-import { BloomPostprocess } from 'oxygen-postprocess-bloom-blur-shader-assets';
-
-// Register helper component.
-EntitySystem.registerComponent('BloomPostprocess', BloomPostprocess.factory);
-```

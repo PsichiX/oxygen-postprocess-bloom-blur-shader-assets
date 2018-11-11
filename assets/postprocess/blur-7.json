@@ -1,0 +1,39 @@
+{
+  "targets": {
+    "t0": { "level": 1 },
+    "t1": { "level": 2 },
+    "t2": { "level": 3 }
+  },
+  "connections": [
+    [null, "pass0", "t0"],
+    ["t0", "pass1", "t1"],
+    ["t1", "pass2", "t2"],
+    ["t2", "pass3", null]
+  ],
+  "effects": {
+    "pass0": {
+      "shader": "shaders/blur-kernel-7.json",
+      "overrideUniforms": {
+        "uScale": [1, 0]
+      }
+    },
+    "pass1": {
+      "shader": "shaders/blur-kernel-7.json",
+      "overrideUniforms": {
+        "uScale": [0, 1]
+      }
+    },
+    "pass2": {
+      "shader": "shaders/blur-kernel-7.json",
+      "overrideUniforms": {
+        "uScale": [1, 0]
+      }
+    },
+    "pass3": {
+      "shader": "shaders/blur-kernel-7.json",
+      "overrideUniforms": {
+        "uScale": [0, 1]
+      }
+    }
+  }
+}
